@@ -16,25 +16,92 @@
               <span>index</span>
             </router-link>
           </a-menu-item>
-          <a-sub-menu key="sub">
+          <a-sub-menu key="ga">
             <span slot="title">
-              <router-link to="/sub/ga">
-                <a-icon type="upload" />Sub
-              </router-link>
+              <a-icon type="rise" />
+              <span>调价选品</span>
             </span>
             <a-menu-item key="3">
-              <router-link to="/sub/ga">
-                <a-icon type="google" />
-                <span>GA</span>
+              <router-link to="/bi/fields">
+                <span>Field Explain</span>
               </router-link>
             </a-menu-item>
-            <a-menu-item key="4">
-              <router-link to="/sub">
-                <a-icon type="yuque" />
-                <span>ERP</span>
-              </router-link>
-            </a-menu-item>
-          </a-sub-menu>          
+            <a-sub-menu key="field">
+              <span slot="title">
+                <span>维度管理</span>
+              </span>
+              <a-menu-item key="4">
+                <router-link to="/bi/dimsite">
+                  <span>Site</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="5">
+                <router-link to="/bi/dimpaymethod">
+                  <span>PayMethod</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="6">
+                <router-link to="/bi/dimshoppingstate">
+                  <span>ShoppingState</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="7">
+                <router-link to="/bi/dimedium">
+                  <span>SourceMedium</span>
+                </router-link>
+              </a-menu-item>
+            </a-sub-menu>
+            <a-sub-menu key="selection">
+              <span slot="title">
+                <span>活动选品</span>
+              </span>
+            </a-sub-menu>
+            <a-sub-menu key="adjust">
+              <span slot="title">
+                <span>商品调价</span>
+              </span>
+              <a-menu-item key="8">
+                <router-link to="/bi/adjust">
+                  <span>调价建议</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="9">
+                <router-link to="/bi/adjust">
+                  <span>调价记录</span>
+                </router-link>
+              </a-menu-item>
+            </a-sub-menu>
+            <a-sub-menu key="rules">
+              <span slot="title">
+                <span>规则管理</span>
+              </span>
+              <a-menu-item key="11">
+                <router-link to="/bi/adjust">
+                  <span>选品规则</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="12">
+                <router-link to="/bi/adjust">
+                  <span>调价规则</span>
+                </router-link>
+              </a-menu-item>
+              <a-menu-item key="13">
+                <router-link to="/bi/adjust">
+                  <span>价格规则</span>
+                </router-link>
+              </a-menu-item>
+            </a-sub-menu>
+            <a-sub-menu key="bi">
+              <span slot="title">
+                <span>BI</span>
+              </span>
+              <a-menu-item key="9">
+                <router-link to="/bi/adjust">
+                  <span>站点综合指标</span>
+                </router-link>
+              </a-menu-item>
+            </a-sub-menu>
+          </a-sub-menu>
         </a-menu>
       </a-layout-sider>
       <a-layout>
@@ -61,7 +128,6 @@
   };
 </script>
 <style>
-
   .ant-layout {
     height: 100vh;
   }

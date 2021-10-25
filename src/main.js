@@ -18,10 +18,10 @@ new Vue({
 
 registerMicroApps([
   {
-    name: 'sub',
+    name: 'bi',
     entry: '//localhost:8081',
     container: '#sub',
-    activeRule: '/sub',
+    activeRule: '/bi',
   }
 ]);
 
